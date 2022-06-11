@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "617287756904",
+    "project_id": "nearby-ev-charging",
+    "storage_bucket": "nearby-ev-charging.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:617287756904:android:9ee35a1e13b72f1f5a5fdd",
+        "android_client_info": {
+          "package_name": "com.nearbyevcharging.app.nearbyev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "617287756904-r5oklh5iu56n39n2j74kg7oe9j9jappo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiRrIbdFjkLedYK7SCuYJGqagEwA1M2NM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "617287756904-r5oklh5iu56n39n2j74kg7oe9j9jappo.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "617287756904-a7ba6ftg8glb4udehic7t6b2iolbggjp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.nearbyevcharging.app"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

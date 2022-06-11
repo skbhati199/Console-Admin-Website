@@ -1,0 +1,75 @@
+{
+    "last_updated": "Sat, 11 Jun 2022 20:57:30 GMT",
+    "routes": [
+        {
+            "file_path": "views/dashboard/dashboard_view.dart",
+            "route_name": "dashboardViewRoute",
+            "view_name": "DashboardView"
+        },
+        {
+            "file_path": "views/charging_point_operators/charging_point_operators_view.dart",
+            "route_name": "charging_point_operatorsViewRoute",
+            "view_name": "ChargingPointOperatorsView"
+        },
+        {
+            "file_path": "views/add_charging_station/add_charging_station_view.dart",
+            "route_name": "add_charging_stationViewRoute",
+            "view_name": "AddChargingStationView"
+        },
+        {
+            "file_path": "views/list_stations/list_stations_view.dart",
+            "route_name": "list_stationsViewRoute",
+            "view_name": "ListStationsView"
+        },
+        {
+            "file_path": "views/dashboard/dashboard_view.dart",
+            "route_name": "dashboardViewRoute0",
+            "view_name": "DashboardView"
+        },
+        {
+            "file_path": "views/alert_notifications/alert_notifications_view.dart",
+            "route_name": "alert_notificationsViewRoute",
+            "view_name": "AlertNotificationsView"
+        },
+        {
+            "file_path": "views/updates/updates_view.dart",
+            "route_name": "updatesViewRoute",
+            "view_name": "UpdatesView"
+        },
+        {
+            "file_path": "views/supports/supports_view.dart",
+            "route_name": "supportsViewRoute",
+            "view_name": "SupportsView"
+        },
+        {
+            "file_path": "views/settings/settings_view.dart",
+            "route_name": "settingsViewRoute",
+            "view_name": "SettingsView"
+        },
+        {
+            "file_path": "views/theme/theme_view.dart",
+            "route_name": "themeViewRoute",
+            "view_name": "ThemeView"
+        },
+        {
+            "file_path": "views/login/login_view.dart",
+            "route_name": "loginViewRoute",
+            "view_name": "LoginView"
+        },
+        {
+            "file_path": "views/register/register_view.dart",
+            "route_name": "registerViewRoute",
+            "view_name": "RegisterView"
+        },
+        {
+            "file_path": "views/forget_password/forget_password_view.dart",
+            "route_name": "forget_passwordViewRoute",
+            "view_name": "ForgetPasswordView"
+        },
+        {
+            "file_path": "views/settings/settings_view.dart",
+            "route_name": "settingsViewRoute0",
+            "view_name": "SettingsView"
+        }
+    ]
+}
