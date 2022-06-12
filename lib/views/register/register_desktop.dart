@@ -11,7 +11,7 @@ class _RegisterDesktop extends StatelessWidget {
       backgroundColor: Colors.blue[50],
       body: Padding(
         padding: EdgeInsets.only(
-            top: 4.0.h, bottom: 6.0.h, left: 4.0.w, right: .0.w),
+            top: 4.0.h, bottom: 6.0.h, left: 4.0.w, right: 4.0.w),
         child: Card(
           shape:
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(40.0)),
@@ -22,7 +22,7 @@ class _RegisterDesktop extends StatelessWidget {
                 Container(
                   width: MediaQuery.of(context).size.width / 3.3,
                   height: MediaQuery.of(context).size.height,
-                  color: Colors.lightBlue[600],
+                  color: Colors.blue[600],
                   child: Padding(
                     padding: const EdgeInsets.only(
                         top: 85.0, right: 50.0, left: 50.0),
@@ -63,7 +63,7 @@ class _RegisterDesktop extends StatelessWidget {
                             height: 50.0,
                           ),
                           MaterialButton(
-                            color: Colors.lightBlue,
+                            color: Colors.blue[400],
                             onPressed: () => viewModel.onLoginPage(),
                             child: Padding(
                               padding: const EdgeInsets.all(8.0),
@@ -87,7 +87,7 @@ class _RegisterDesktop extends StatelessWidget {
                       Text(
                         "Register",
                         style: GoogleFonts.poppins(
-                          color: Colors.lightBlue,
+                          color: Colors.blue[400],
                           fontWeight: FontWeight.w600,
                           fontSize: 14.0.sp,
                         ),
@@ -122,7 +122,7 @@ class _RegisterDesktop extends StatelessWidget {
                               child: Text(
                                 "Cancel",
                                 style: GoogleFonts.poppins(
-                                    fontSize: 4.0.sp, color: kColorPrimaryDark),
+                                    fontSize: 4.0.sp, color: Colors.blue[400]),
                               ),
                             ),
                           ),
@@ -130,7 +130,7 @@ class _RegisterDesktop extends StatelessWidget {
                             width: 20.0,
                           ),
                           MaterialButton(
-                            color: Colors.lightBlue,
+                            color: Colors.blue[400],
                             onPressed: () => viewModel.onDashboardPage(),
                             child: Padding(
                               padding: const EdgeInsets.all(8.0),

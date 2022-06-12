@@ -22,7 +22,7 @@ class _LoginDesktop extends StatelessWidget {
                 Container(
                   width: MediaQuery.of(context).size.width / 3.3,
                   height: MediaQuery.of(context).size.height,
-                  color: Colors.lightBlue[600],
+                  color: Colors.blue[600],
                   child: Padding(
                     padding: const EdgeInsets.only(
                         top: 85.0, right: 50.0, left: 50.0),
@@ -63,7 +63,7 @@ class _LoginDesktop extends StatelessWidget {
                             height: 50.0,
                           ),
                           MaterialButton(
-                            color: Colors.lightBlue,
+                            color: Colors.blue[400],
                             onPressed: () => viewModel.onSignUpPage(),
                             child: Padding(
                               padding: const EdgeInsets.all(8.0),
@@ -87,7 +87,7 @@ class _LoginDesktop extends StatelessWidget {
                       Text(
                         "Login",
                         style: GoogleFonts.poppins(
-                          color: Colors.lightBlue,
+                          color: Colors.blue[400],
                           fontWeight: FontWeight.w600,
                           fontSize: 14.0.sp,
                         ),
@@ -117,7 +117,7 @@ class _LoginDesktop extends StatelessWidget {
                               child: Text(
                                 "Cancel",
                                 style: GoogleFonts.poppins(
-                                    fontSize: 4.0.sp, color: kColorPrimaryDark),
+                                    fontSize: 4.0.sp, color: Colors.blue[400]),
                               ),
                             ),
                           ),
@@ -125,7 +125,7 @@ class _LoginDesktop extends StatelessWidget {
                             width: 20.0,
                           ),
                           MaterialButton(
-                            color: Colors.lightBlue,
+                            color: Colors.blue[400],
                             onPressed: () => viewModel.onDashboardPage(),
                             child: Padding(
                               padding: const EdgeInsets.all(8.0),
