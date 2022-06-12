@@ -11,6 +11,7 @@ class _DashboardDesktop extends StatelessWidget {
       key: viewModel.drawerscaffoldkey,
       backgroundColor: Colors.blue[50],
       appBar: AppBar(
+        toolbarHeight: 60,
         leading: IconButton(
           icon: Icon(
             Icons.menu,
@@ -36,45 +37,220 @@ class _DashboardDesktop extends StatelessWidget {
           ),
         ),
         actions: [
-          Text("User name"),
-          IconButton(
-            icon: Icon(
-              Icons.person,
-              color: Colors.black,
+          Center(
+            child: Text(
+              "Sonu",
+              textAlign: TextAlign.center,
+              style: GoogleFonts.poppins(
+                color: Colors.black,
+                fontSize: 16.0,
+              ),
             ),
-            onPressed: () {
-              viewModel.profile();
-            },
+          ),
+          Padding(
+            padding: const EdgeInsets.only(top: 8.0, bottom: 8.0, right: 8.0),
+            child: IconButton(
+              iconSize: 60,
+              icon: Image.asset(
+                'icons/menu_icon_grey.png',
+                scale: 1,
+              ),
+              onPressed: () {
+                viewModel.profile();
+              },
+            ),
           ),
         ],
       ),
       drawer: _buildAppDrawer(context),
-      body: Container(
-        child: Column(
-          children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Container(child: Text('DashboardDesktop')),
-              ],
-            ),
-            Row(
-              children: [
-                Text('DashboardDesktop'),
-                Text('DashboardDesktop'),
-                Text('DashboardDesktop'),
-                Text('DashboardDesktop'),
-              ],
-            ),
-            Row(
-              children: [
-                Text('DashboardDesktop'),
-                Text('DashboardDesktop'),
-                Text('DashboardDesktop'),
-                Text('DashboardDesktop'),
-              ],
-            ),
-          ],
+      body: SingleChildScrollView(
+        child: Container(
+          child: Column(
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Container(
+                      padding: EdgeInsets.all(8.0),
+                      width: MediaQuery.of(context).size.width * 0.25 - 30,
+                      margin: EdgeInsets.only(top: 20, left: 10),
+                      height: 250,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.all(Radius.circular(14)),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black.withOpacity(0.2),
+                            spreadRadius: 2,
+                            blurRadius: 1,
+                            offset: Offset(0, 1), // changes position of shadow
+                          ),
+                        ],
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                          Text('Charging Stations'),
+                          Text('No of Charging Stations'),
+                        ],
+                      )),
+                  Container(
+                      width: MediaQuery.of(context).size.width * 0.25 - 30,
+                      margin: EdgeInsets.only(top: 20, left: 10),
+                      height: 250,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.all(Radius.circular(14)),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black.withOpacity(0.2),
+                            spreadRadius: 2,
+                            blurRadius: 1,
+                            offset: Offset(0, 1), // changes position of shadow
+                          ),
+                        ],
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                          Text('Charging Stations'),
+                          Text('No of Charging Stations'),
+                        ],
+                      )),
+                  Container(
+                      width: MediaQuery.of(context).size.width * 0.25 - 30,
+                      margin: EdgeInsets.only(top: 20, left: 10),
+                      height: 250,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.all(Radius.circular(14)),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black.withOpacity(0.2),
+                            spreadRadius: 2,
+                            blurRadius: 1,
+                            offset: Offset(0, 1), // changes position of shadow
+                          ),
+                        ],
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                          Text('Charging Stations'),
+                          Text('No of Charging Stations'),
+                        ],
+                      )),
+                  Container(
+                      width: MediaQuery.of(context).size.width * 0.25 - 30,
+                      margin: EdgeInsets.only(top: 20, left: 0),
+                      height: 250,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.all(Radius.circular(14)),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black.withOpacity(0.2),
+                            spreadRadius: 2,
+                            blurRadius: 1,
+                            offset: Offset(0, 1), // changes position of shadow
+                          ),
+                        ],
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                          Text('Charging Stations'),
+                          Text('No of Charging Stations'),
+                        ],
+                      )),
+                ],
+              ),
+
+              // Second Row
+              Container(
+                  width: MediaQuery.of(context).size.width - 30,
+                  margin: EdgeInsets.only(top: 20, left: 20, right: 20),
+                  height: 300,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.all(Radius.circular(14)),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black.withOpacity(0.2),
+                        spreadRadius: 2,
+                        blurRadius: 1,
+                        offset: Offset(0, 1), // changes position of shadow
+                      ),
+                    ],
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      Text('Charging Stations'),
+                      Text('No of Charging Stations'),
+                    ],
+                  )),
+              // Third Row
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Container(
+                      width: MediaQuery.of(context).size.width * 0.75 - 30,
+                      margin: EdgeInsets.only(top: 20, left: 20),
+                      height: 400,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.all(Radius.circular(14)),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black.withOpacity(0.2),
+                            spreadRadius: 2,
+                            blurRadius: 1,
+                            offset: Offset(0, 1), // changes position of shadow
+                          ),
+                        ],
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                          Text('Charging Stations'),
+                          Text('No of Charging Stations'),
+                        ],
+                      )),
+                  Container(
+                      width: MediaQuery.of(context).size.width * 0.25 - 30,
+                      margin: EdgeInsets.only(top: 20, left: 20, right: 20),
+                      height: 400,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.all(Radius.circular(14)),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black.withOpacity(0.2),
+                            spreadRadius: 2,
+                            blurRadius: 1,
+                            offset: Offset(0, 1), // changes position of shadow
+                          ),
+                        ],
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                          Text('Charging Stations'),
+                          Text('No of Charging Stations'),
+                        ],
+                      ))
+                ],
+              ),
+            ],
+          ),
         ),
       ),
     );
