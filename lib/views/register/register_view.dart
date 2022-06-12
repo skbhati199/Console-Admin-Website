@@ -1,6 +1,10 @@
 library register_view;
 
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:nearbyev/utils/app_colors.dart';
+import 'package:nearbyev/widgets/input_field.dart';
+import 'package:sizer/sizer.dart';
 import 'package:stacked/stacked.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import 'register_view_model.dart';
@@ -13,17 +17,17 @@ class RegisterView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ViewModelBuilder<RegisterViewModel>.reactive(
-      viewModelBuilder: () => RegisterViewModel(),
-      onModelReady: (viewModel) {
-        // Do something once your viewModel is initialized
-      },
-      builder: (BuildContext context, RegisterViewModel viewModel, Widget child) {
-        return ScreenTypeLayout(
-          mobile: _RegisterMobile(viewModel),
-          desktop: _RegisterDesktop(viewModel),
-          tablet: _RegisterTablet(viewModel),  
-        );
-      }
-    );
+        viewModelBuilder: () => RegisterViewModel(),
+        onModelReady: (viewModel) {
+          // Do something once your viewModel is initialized
+        },
+        builder:
+            (BuildContext context, RegisterViewModel viewModel, Widget child) {
+          return ScreenTypeLayout(
+            mobile: _RegisterMobile(viewModel),
+            desktop: _RegisterDesktop(viewModel),
+            tablet: _RegisterTablet(viewModel),
+          );
+        });
   }
 }

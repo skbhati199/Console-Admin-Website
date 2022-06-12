@@ -18,6 +18,8 @@ dependencies:
     firebase_app_check: ^0.0.6+13
     firebase_auth: ^3.3.19
     stacked_hooks: ^0.1.3+2
+    google_fonts: ^3.0.1
+    sizer: ^2.0.15
 dev_dependencies:
     flutter_test:
         sdk: flutter
